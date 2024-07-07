@@ -1,0 +1,61 @@
+.mat-toolbar {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  
+  
+  .toolbar-buttons {
+    display: flex;
+    justify-content: center; 
+    flex-grow: 3; 
+  }
+  .toolbar-buttons button {
+    margin: 0 30px; 
+  }
+  
+  body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f5f5dc; 
+      margin: 0;
+      padding: 0;
+  }
+  
+ 
+  mat-toolbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #005f73 !important; 
+      padding: 20px 40px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  .toolbar-title {
+    font-family: 'Comic Sans MS', Arial, Verdana;
+      color: #fff;
+      font-size: 2rem;
+  }
+  
+  
+  .toolbar-buttons {
+      display: flex;
+      gap: 20px;
+  }
+  
+  .toolbar-buttons button {
+      color: #fff !important;
+      font-size: 1rem;
+      transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .toolbar-buttons button:hover {
+      color: #ffcb77 !important; /* Color hover de los botones */
+      background-color: #0a9396 !important; /* Fondo hover de los botones */
+  }
+  
+  .router-link-active {
+      color: #94d2bd !important; /* Color de los enlaces activos */
+  }
