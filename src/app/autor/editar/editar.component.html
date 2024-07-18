@@ -1,0 +1,21 @@
+<div class="container">
+    <h2 class="list-title">Actualizar Autor</h2>
+    <div class="form-container">
+      <mat-dialog-content [formGroup]="form">
+        <mat-form-field class="form-field">
+            <input matInput placeholder="Nombre" formControlName="nombre">
+        </mat-form-field>
+        <mat-form-field class="form-field">
+            <input matInput placeholder="Apellido" formControlName="apellido">
+        </mat-form-field>
+        <mat-form-field class="form-field">
+            <input matInput placeholder="Nacionalidad" formControlName="nacionalidad">
+        </mat-form-field>
+      </mat-dialog-content>
+      <mat-dialog-actions>
+        <button mat-raised-button class="action-button" color="primary" (click)="guardar()">Guardar</button>
+        <button mat-raised-button class="action-button" color="warn" (click)="cerrar()">Cerrar</button>
+      </mat-dialog-actions>
+    </div>
+  </div>
+  

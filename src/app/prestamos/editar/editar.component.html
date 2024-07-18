@@ -1,0 +1,30 @@
+<div class="container">
+    <h2 class="list-title">Actualizar Prestamo</h2>
+    <div class="form-container">
+      <mat-dialog-content [formGroup]="form">
+       
+        <mat-form-field class="form-field">
+            <input matInput placeholder="Fecha Prestamo" formControlName="fechaPrestamo">
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+            <input matInput placeholder="Fecha Devolucion" formControlName="fechaDevolucion">
+        </mat-form-field>
+
+        <mat-form-field class="form-field">
+        <input matInput placeholder="LibroID" formControlName="libroID">
+      </mat-form-field>
+
+      <mat-form-field class="form-field">
+      <input matInput placeholder="UsuarioID" formControlName="usuarioID">
+      </mat-form-field>
+
+      
+      </mat-dialog-content>
+      <mat-dialog-actions>
+        <button mat-raised-button class="action-button" color="primary" (click)="guardar()">Guardar</button>
+        <button mat-raised-button class="action-button" color="warn" (click)="cerrar()">Cerrar</button>
+      </mat-dialog-actions>
+    </div>
+  </div>
+  

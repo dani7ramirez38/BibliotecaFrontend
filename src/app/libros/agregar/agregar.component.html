@@ -1,1 +1,28 @@
-<p>agregar works!</p>
+<div class="agregar-libros-page">
+  <div class="form-container">
+      <mat-card class="agregar-libros-card">
+          <span class="form-title">Agregar Una Nueva libro</span>
+          <form [formGroup]="librosform" (ngSubmit)="onSubmit()">
+             
+              <mat-form-field class="agregar-libros-field">
+                  <input matInput placeholder="titulo" formControlName="titulo">
+              </mat-form-field>
+
+              <mat-form-field class="agregar-libros-field">
+                <input matInput placeholder="anioPublicacion" formControlName="anioPublicacion">
+            </mat-form-field>
+
+            <mat-form-field class="agregar-libros-field">
+              <input matInput placeholder="autorID" formControlName="autorID">
+          </mat-form-field>
+
+          <mat-form-field class="agregar-libros-field">
+            <input matInput placeholder="categoriaID" formControlName="categoriaID">
+        </mat-form-field>
+             
+              <mat-dialog-actions>
+                  <button mat-raised-button [disabled]="!librosform.valid">Agregar La Nueva Categoria</button>
+              </mat-dialog-actions>
+          </form> 
+      </mat-card>
+  </div>

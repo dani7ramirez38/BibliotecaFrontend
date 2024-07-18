@@ -1,4 +1,15 @@
-/* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body {
+    height: 100%;
+    margin: 0;
+    background-image: url('https://media.cnn.com/api/v1/images/stellar/prod/cnne-432549-432548.jpg?c=original');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+}
+
+body {
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+}

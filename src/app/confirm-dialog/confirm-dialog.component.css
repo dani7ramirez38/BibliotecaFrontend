@@ -1,0 +1,36 @@
+.mat-dialog-container {
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .mat-dialog-title {
+    font-size: 1.5rem;
+    color: #dc3545; /* Color rojo */
+  }
+  
+  .mat-dialog-content p {
+    font-size: 1.1rem;
+    color: #343a40; /* Color de texto */
+  }
+  
+  .mat-dialog-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+  }
+  
+  button[mat-button] {
+    font-size: 1rem;
+    font-weight: bold;
+  }
+  
+  button[mat-button].mat-warn {
+    background-color: #dc3545; /* Botón rojo */
+    color: #fff;
+  }
+  
+  button[mat-button].mat-warn:hover {
+    background-color: #c82333; /* Botón rojo más oscuro al pasar el mouse */
+  }
+  

@@ -1,0 +1,19 @@
+
+<div class="agregar-categoria-page">
+    <div class="form-container">
+        <mat-card class="agregar-categoria-card">
+            <span class="form-title">Agregar Una Nueva Categoria</span>
+            <form [formGroup]="categoriaform" (ngSubmit)="onSubmit()">
+               
+                <mat-form-field class="agregar-categoria-field">
+                    <input matInput placeholder="Nombre" formControlName="nombre">
+                </mat-form-field>
+               
+                <mat-dialog-actions>
+                    <button mat-raised-button [disabled]="!categoriaform.valid">Agregar La Nueva Categoria</button>
+                </mat-dialog-actions>
+            </form> 
+        </mat-card>
+    </div>
+
+

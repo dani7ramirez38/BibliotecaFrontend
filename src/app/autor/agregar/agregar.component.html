@@ -1,0 +1,25 @@
+
+
+<div class="agregar-autor-page">
+    <div class="form-container">
+        <mat-card class="agregar-autor-card">
+            <span class="form-title">Agregar Un Nuevo Autor</span>
+            <form [formGroup]="autorform" (ngSubmit)="onSubmit()">
+               
+                <mat-form-field class="agregar-autor-field">
+                    <input matInput placeholder="Nombre" formControlName="nombre">
+                </mat-form-field>
+                <mat-form-field class="agregar-autor-field">
+                    <input matInput placeholder="Apellido" formControlName="apellido">
+                </mat-form-field>
+                <mat-form-field class="agregar-autor-field">
+                    <input matInput placeholder="Nacionalidad" formControlName="nacionalidad">
+                </mat-form-field>
+               
+                <mat-dialog-actions>
+                    <button mat-raised-button [disabled]="!autorform.valid">Agregar Autor</button>
+                </mat-dialog-actions>
+            </form> 
+        </mat-card>
+    </div>
+

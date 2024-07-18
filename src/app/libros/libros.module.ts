@@ -5,6 +5,11 @@ import { AgregarComponent } from './agregar/agregar.component';
 import { EditarComponent } from './editar/editar.component';
 import { EliminarComponent } from './eliminar/eliminar.component';
 import { BuscarComponent } from './buscar/buscar.component';
+import { HomeComponent } from './home/home.component';
+import { LibrosRoutingModule } from './libros-routing.module';
+import { MaterialModule } from '../material/material.module';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
 
 
 
@@ -14,10 +19,17 @@ import { BuscarComponent } from './buscar/buscar.component';
     AgregarComponent,
     EditarComponent,
     EliminarComponent,
-    BuscarComponent
+    BuscarComponent,
+    HomeComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    LibrosRoutingModule,
+    MaterialModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+  
   ]
 })
 export class LibrosModule { }

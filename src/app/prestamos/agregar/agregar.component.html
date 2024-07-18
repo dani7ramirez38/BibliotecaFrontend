@@ -1,0 +1,30 @@
+
+    <div class="agregar-prestamos-page">
+        <div class="form-container">
+            <mat-card class="agregar-prestamos-card">
+                <span class="form-title">Crea Un Prestamo</span>
+                <form [formGroup]="prestamosform" (ngSubmit)="onSubmit()">
+                   
+                    <mat-form-field class="agregar-prestamos-field">
+                        <input matInput placeholder="fechaPrestamo" formControlName="fechaPrestamo">
+                    </mat-form-field>
+                    <mat-form-field class="agregar-prestamos-field">
+                        <input matInput placeholder="fechaDevolucion" formControlName="fechaDevolucion">
+                    </mat-form-field>
+
+                    <mat-form-field class="agregar-prestamos-field">
+                        <input matInput placeholder="libroID" formControlName="libroID">
+                    </mat-form-field>
+                    <mat-form-field class="agregar-prestamos-field">
+                        <input matInput placeholder="usuarioID" formControlName="usuarioID">
+                    </mat-form-field>
+                   
+                    
+                    <mat-dialog-actions>
+                        <button mat-raised-button [disabled]="!prestamosform.valid">Crear Prestamo</button>
+                    </mat-dialog-actions>
+                </form> 
+            </mat-card>
+        </div>
+    
+    
