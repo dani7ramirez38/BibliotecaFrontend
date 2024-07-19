@@ -18,7 +18,7 @@ export class CategoriaService {
   constructor(private http: HttpClient) { }
 
   listarCategoria(){
-    console.log ("listar Entrada")
+    console.log ("listar Categorias")
     this.http.get<IDataCategoria>(this.categoriaUrl)
               .subscribe(resp=> {
                 this.resultados= resp.resultado;

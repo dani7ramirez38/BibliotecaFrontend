@@ -36,7 +36,7 @@ export class ListarComponent {
       removerUsuarios(usuarios: Usuarios) {
       
         Swal.fire({
-          title: '¿Desea Eliminar El Libro?',
+          title: '¿Desea Eliminar El Usuario?',
           text: usuarios.nombre,
           icon: 'warning',
           confirmButtonColor: '#3085d6',
@@ -53,7 +53,7 @@ export class ListarComponent {
                   if (data) {
                     Swal.fire({
                       icon: "success",
-                      title: "El libro fue eliminado correctamente",
+                      title: "El Usuario fue eliminado correctamente",
                       showConfirmButton: true,
                     });
                     this.usuariosService.listarUsuarios();
@@ -65,7 +65,7 @@ export class ListarComponent {
                     Swal.fire({
                       icon: "error",
                       title: "Oops...",
-                      text: "El Libro no pudo ser eliminado",
+                      text: "El Usuario no pudo ser eliminado",
                       showConfirmButton: true,
                     });
                   }
@@ -74,7 +74,7 @@ export class ListarComponent {
                   Swal.fire({
                     icon: "error",
                     title: "Oops...",
-                    text: "Ocurrió un error al intentar eliminar el Libro",
+                    text: "Ocurrió un error al intentar eliminar el Usuario",
                     showConfirmButton: true,
                   });
                   this.router.navigate(['/usuarios']);

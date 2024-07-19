@@ -40,7 +40,7 @@ export class AgregarComponent {
           next: (data: any) => {
             Swal.fire({
               icon: "success",
-              title: "El Prestamo fue creado correctamente",
+              title: "El Usuario fue creado correctamente",
               showConfirmButton: true
             });
             this.router.navigate(['/usuarios/listar']);
@@ -48,7 +48,7 @@ export class AgregarComponent {
           error: (error: any) => {
             Swal.fire({
               icon: "error",
-              title: "Hubo un error al crear el Prestamo",
+              title: "Hubo un error al crear el Usuario",
               showConfirmButton: true
             });
           }

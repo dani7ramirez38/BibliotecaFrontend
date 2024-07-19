@@ -56,7 +56,7 @@ export class EditarComponent {
       },
       error: (error: any) => {
         
-        console.error('Error al actualizar el Libro:', error);
+        console.error('Error al actualizar el Usuario:', error);
       }
     });
   }

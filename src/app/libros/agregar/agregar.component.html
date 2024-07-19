@@ -1,28 +1,29 @@
 <div class="agregar-libros-page">
-  <div class="form-container">
-      <mat-card class="agregar-libros-card">
-          <span class="form-title">Agregar Una Nueva libro</span>
-          <form [formGroup]="librosform" (ngSubmit)="onSubmit()">
-             
-              <mat-form-field class="agregar-libros-field">
-                  <input matInput placeholder="titulo" formControlName="titulo">
+    <div class="form-container">
+        <mat-card class="agregar-libros-card">
+            <span class="form-title">Agregar Una Nueva libro</span>
+            <form [formGroup]="librosform" (ngSubmit)="onSubmit()">
+               
+                <mat-form-field class="agregar-libros-field">
+                    <input matInput placeholder="Titulo" formControlName="titulo">
+                </mat-form-field>
+  
+                <mat-form-field class="agregar-libros-field">
+                  <input matInput placeholder="Año de Publicacion" formControlName="anioPublicacion">
               </mat-form-field>
-
+  
               <mat-form-field class="agregar-libros-field">
-                <input matInput placeholder="anioPublicacion" formControlName="anioPublicacion">
+                <input matInput placeholder="AutorID" formControlName="autorID">
             </mat-form-field>
-
+  
             <mat-form-field class="agregar-libros-field">
-              <input matInput placeholder="autorID" formControlName="autorID">
+              <input matInput placeholder="CategoriaID" formControlName="categoriaID">
           </mat-form-field>
-
-          <mat-form-field class="agregar-libros-field">
-            <input matInput placeholder="categoriaID" formControlName="categoriaID">
-        </mat-form-field>
-             
-              <mat-dialog-actions>
-                  <button mat-raised-button [disabled]="!librosform.valid">Agregar La Nueva Categoria</button>
-              </mat-dialog-actions>
-          </form> 
-      </mat-card>
-  </div>
+               
+                <mat-dialog-actions>
+                    <button mat-raised-button [disabled]="!librosform.valid">Agregar el Nuevo Libro</button>
+                </mat-dialog-actions>
+            </form> 
+        </mat-card>
+    </div>
+  

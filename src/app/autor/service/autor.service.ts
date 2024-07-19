@@ -18,7 +18,7 @@ export class AutorService {
   constructor(private http: HttpClient) { }
 
   listarAutor(){
-    console.log ("listar Entrada")
+    console.log ("Listar Autores")
     this.http.get<IDataAutor>(this.autorUrl)
               .subscribe(resp=> {
                 this.resultados= resp.resultado;

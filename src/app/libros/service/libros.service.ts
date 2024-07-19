@@ -19,7 +19,7 @@ export class LibrosService {
   constructor(private http: HttpClient) { }
 
   listarLibros(){
-    console.log ("listar Entrada")
+    console.log ("listar Libros")
     this.http.get<IDataLibros>(this.librosUrl)
               .subscribe(resp=> {
                 this.resultados= resp.resultado;

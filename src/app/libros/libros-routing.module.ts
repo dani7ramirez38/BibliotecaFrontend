@@ -6,7 +6,7 @@ import { ListarComponent } from './listar/listar.component';
 import { AgregarComponent } from './agregar/agregar.component';
 import { EditarComponent } from './editar/editar.component';
 import { EliminarComponent } from './eliminar/eliminar.component';
-import { BuscarComponent } from './buscar/buscar.component';
+
 
 const routes: Routes= [
   {
@@ -16,7 +16,6 @@ const routes: Routes= [
       { path: 'agregar', component: AgregarComponent },
       { path: 'editar/:id', component: EditarComponent },
       { path: 'eliminar/:id', component: EliminarComponent },
-      { path: 'buscar/:id', component: BuscarComponent },
       { path: '**', redirectTo: 'listar' },
     ]
   }

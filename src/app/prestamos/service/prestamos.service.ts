@@ -18,7 +18,7 @@ export class PrestamosService {
   constructor(private http: HttpClient) { }
 
   listarPrestamos(){
-    console.log ("listar Entrada")
+    console.log ("Listar Prestamo")
     this.http.get<IDataPrestamos>(this.prestamosUrl)
               .subscribe(resp=> {
                 this.resultados= resp.resultado;

@@ -17,7 +17,7 @@ export class UsuariosService {
   constructor(private http: HttpClient) { }
 
   listarUsuarios(){
-    console.log ("listar Entrada")
+    console.log ("listar Usuario")
     this.http.get<IDataUsuarios>(this.usuariosUrl)
               .subscribe(resp=> {
                 this.resultados= resp.resultado;

@@ -47,7 +47,7 @@ export class AgregarComponent  {
           next: (data: any) => {
             Swal.fire({
               icon: "success",
-              title: "La Categoria fue agregada correctamente",
+              title: "El libro fue agregada correctamente",
               showConfirmButton: true
             });
             this.router.navigate(['/libros/listar']);
@@ -55,7 +55,7 @@ export class AgregarComponent  {
           error: (error: any) => {
             Swal.fire({
               icon: "error",
-              title: "Hubo un error al agregar la Categoria",
+              title: "Hubo un error al agregar el libro",
               showConfirmButton: true
             });
           }
