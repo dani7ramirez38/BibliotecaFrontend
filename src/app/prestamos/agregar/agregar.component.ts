@@ -16,7 +16,7 @@ export class AgregarComponent {
   prestamosform = new FormGroup({
 
     fechaPrestamo: new FormControl(null,Validators.required),
-    fechaDevolucion: new FormControl(null,Validators.required),
+    fechaDevolucion: new FormControl(null),
     libroID: new FormControl(null,Validators.required),
     usuarioID: new FormControl(null,Validators.required),
    
@@ -31,7 +31,7 @@ export class AgregarComponent {
         
          // Usa el operador de fusión nula (??) para manejar null y undefined
         const fechaPrestamo: Date = prestamosData.fechaPrestamo ? new Date(prestamosData.fechaPrestamo) : new Date();
-        const fechaDevolucion: Date = prestamosData.fechaDevolucion ? new Date(prestamosData.fechaDevolucion) : new Date();
+        const fechaDevolucion: Date | null = prestamosData.fechaDevolucion ? new Date(prestamosData.fechaDevolucion) : null;
         const libroID: number = prestamosData.libroID ?? 0;
         const usuarioID: number = prestamosData.usuarioID ?? 0;
           

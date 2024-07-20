@@ -7,7 +7,7 @@ export interface IDataPrestamos {
 export interface Prestamos {
     id:              number;
     fechaPrestamo:   Date;
-    fechaDevolucion: Date;
+    fechaDevolucion: Date | null; 
     libroID:         number;
     usuarioID:         number;
 }
